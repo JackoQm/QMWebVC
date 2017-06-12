@@ -10,6 +10,8 @@
 		91EBE57E1EEAAFF800CF239C /* QMWebVC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91EBE5741EEAAFF800CF239C /* QMWebVC.framework */; };
 		91EBE5831EEAAFF800CF239C /* QMWebVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EBE5821EEAAFF800CF239C /* QMWebVCTests.swift */; };
 		91EBE5851EEAAFF800CF239C /* QMWebVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 91EBE5771EEAAFF800CF239C /* QMWebVC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91EBE58F1EEAB19400CF239C /* QMWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EBE58E1EEAB19400CF239C /* QMWebViewController.swift */; };
+		91EBE5911EEAB1B400CF239C /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EBE5901EEAB1B400CF239C /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		91EBE57D1EEAAFF800CF239C /* QMWebVCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QMWebVCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91EBE5821EEAAFF800CF239C /* QMWebVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QMWebVCTests.swift; sourceTree = "<group>"; };
 		91EBE5841EEAAFF800CF239C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91EBE58E1EEAB19400CF239C /* QMWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QMWebViewController.swift; sourceTree = "<group>"; };
+		91EBE5901EEAB1B400CF239C /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				91EBE5771EEAAFF800CF239C /* QMWebVC.h */,
+				91EBE58E1EEAB19400CF239C /* QMWebViewController.swift */,
+				91EBE5901EEAB1B400CF239C /* UIView+Extension.swift */,
 				91EBE5781EEAAFF800CF239C /* Info.plist */,
 			);
 			path = QMWebVC;
@@ -149,6 +155,7 @@
 					91EBE5731EEAAFF800CF239C = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 54RRP6C2DY;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					91EBE57C1EEAAFF800CF239C = {
@@ -198,6 +205,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91EBE5911EEAB1B400CF239C /* UIView+Extension.swift in Sources */,
+				91EBE58F1EEAB19400CF239C /* QMWebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +333,7 @@
 		91EBE5891EEAAFF800CF239C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 54RRP6C2DY;
@@ -336,6 +346,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Qm.QMWebVC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -343,6 +354,7 @@
 		91EBE58A1EEAAFF800CF239C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 54RRP6C2DY;
@@ -362,6 +374,7 @@
 		91EBE58C1EEAAFF800CF239C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 54RRP6C2DY;
 				INFOPLIST_FILE = QMWebVCTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -374,6 +387,7 @@
 		91EBE58D1EEAAFF800CF239C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 54RRP6C2DY;
 				INFOPLIST_FILE = QMWebVCTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
